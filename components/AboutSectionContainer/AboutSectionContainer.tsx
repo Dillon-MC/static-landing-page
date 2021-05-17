@@ -18,7 +18,7 @@ const AboutSectionContainer: Function = ({styles}: IStyleProps): JSX.Element => 
         <div id={styles.aboutSectionContainer}>
             <hr className="sectionSeperator" />
             {/* PARAGRAPH 1 */}
-            <p className={styles.paragraph}>
+            <div className={styles.paragraph}>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                 Quasi numquam perferendis illo voluptatum ut dolores consectetur.
                 Sapiente ad ullam quos maxime placeat, 
@@ -30,7 +30,7 @@ const AboutSectionContainer: Function = ({styles}: IStyleProps): JSX.Element => 
                 sunt dolore beatae itaque non inventore, 
                 facilis veritatis aliquid nam deleniti, 
                 ducimus sint? Voluptatum iusto quia obcaecati.
-            </p>
+            </div>
             <div className={`${styles.imageContainer} ${styles.pottedPlants1Image}`}>
                 <a className={styles.imageLink} href="https://unsplash.com/photos/46xWt_kBFDw">bady abbas/unsplash</a>
             </div>
