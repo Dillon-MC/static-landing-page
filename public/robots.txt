@@ -1,0 +1,6 @@
+Sitemap: https://static-landing-page-eight.vercel.app/api/posts-sitemap
+
+User-agent: *
+Allow: /*
+
+Disallow: /api/*
