@@ -1,0 +1,76 @@
+/* ABOUT SECTION STYLES */
+#aboutSectionContainer {
+    width: 100%;
+    height: 170vh;
+    max-height: 1150px;
+    background: linear-gradient(45deg, rgb(255, 255, 255, 1) 53%, rgba(39,173,117,1) 53%);
+    display: grid;
+    grid-template-columns: 40% 1fr;
+}
+
+.pottedPlants1Image {
+    background-image: url("../public/pottedPlants1.jpg");
+}
+
+.pottedPlants2Image {
+    background-image: url("../public/pottedPlants2.jpg");
+}
+
+.imageContainer {
+    position: relative;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.226);
+    width: 509px;
+    height: 377px;
+    margin-top: 100px;
+    display: flex;
+    justify-self: center;
+    background-size: cover;
+    border-style: solid;
+    border-color: white;
+    border-width: 4px;
+}
+
+.imageLink {
+    width: 100%;
+    height: 25px;
+    color: rgb(39, 173, 117);
+    padding-left: 4px;
+    padding-right: 4px;
+    background-color: white;
+    font-weight: 100;
+    align-self: flex-end;
+}
+
+.paragraph {
+    margin-top: 100px;
+    width: 60%;
+    padding: 5%;
+    text-align: left;
+    justify-self: center;
+    font-size: larger;
+
+}
+
+@media(max-width:950px) {
+    #aboutSectionContainer {
+        height: 200vh;
+        max-height: 200vh;
+        justify-content: center;
+        grid-template-columns: none;
+        grid-template-rows: none;
+    }
+    .imageContainer {
+        justify-self: center;
+        width: 320px;
+        height: 237px;
+        margin-top: 0;
+    }
+    .paragraph {
+        width: 100%;
+        max-width: 400px;
+        padding: 10px;
+        text-align: left;
+        margin-top: 50px;
+        font-size: 20px;
+    }
+}

@@ -14,3 +14,91 @@ a {
 * {
   box-sizing: border-box;
 }
+
+hr {
+  height: 2px;
+  background-color: rgb(39, 173, 117);
+  border: none;
+}
+
+input {
+  width: 200px;
+  height: 50px;
+  margin: 5px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: black;
+  font-size: medium;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  height: 30px;
+  text-decoration: underline;
+  margin: 0px;
+}
+
+.sectionSeperator {
+  position: absolute;
+  margin: 0;
+  width: 100%;
+  height: 3px;
+}
+
+#header {
+  position: fixed;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(39, 173, 117);
+  z-index: 1000;
+}
+
+.headerButton {
+  width: 100px;
+  height: 50px;
+  padding: 10px;
+  background-color: transparent;
+  outline: transparent;
+  border-style: none;
+  color: white;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+.headerButton:hover {
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.26);
+  transition: all 0.14s;
+}
+
+#messageBox {
+  text-align: start;
+  align-self: center;
+  padding: 25px;
+  padding-top: 0;
+  font-size: medium;
+  background-color: white;
+  width: 250px;
+  height: 300px;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.3);
+  margin-left: 100px;
+  grid-column-start: 1;
+  grid-row-start: 2;
+}
+
+#messageBox::first-letter {
+  font-size: 30px;
+}
+
+@media(max-width:950px) {
+  #messageBox {
+    margin: 0px;
+    justify-self: center;
+    grid-row-start: 1;
+    margin-top: 250px;
+  }
+}
