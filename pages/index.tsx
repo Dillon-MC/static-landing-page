@@ -13,7 +13,7 @@ const Home: Function = (): JSX.Element => {
       <Head>
         <title>Static Landing Page</title>
         <meta name="language" lang="en-us" />
-        <meta name="description" content="Static landing page created using NextJS" />
+        <meta name="description" content="Static landing page created using NextJS." />
         <link rel="shortcut icon" href="/favicon.ico" />
       </Head>
       <div id={homeStyles.aboveTheFoldBackgroundImage}></div>
